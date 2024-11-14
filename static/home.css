@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+
+.head {
+  height: 23vh;
+  background-image: url('bgforhome.webp');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.h {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.h h1 {
+  font-size: 2.5em;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.h p {
+  color: #f8f8f8;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: orange;
+  color: blanchedalmond;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e43c90;
+}
+
+
+.about {
+  height: 35.5vh;
+  background-image: url(bgforhome.webp);
+  text-align: center;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  align-items: baseline;
+
+}
+
+.s {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  align-items: end;
+}
+
+.s h2 {
+  font-size: 2em;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.s p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: rgb(231, 226, 230);
+}
+
+.tejas {
+  height: 45vh;
+  background-image: url(bgforhome.webp);
+  padding: 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats {
+  display: flex;
+  animation: marquee 5s linear infinite;
+  /* Create the marquee effect */
+}
+
+.stat-box {
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+

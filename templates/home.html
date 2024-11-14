@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fetch</title>
+  <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+  <div class="bg">
+  <header class="head">
+    <div class="h">
+      <h1>Welcome to Fresh Fetch</h1>
+      <p>Bridging the gap between farmers, vendors, and transporters for a sustainable agricultural ecosystem.</p>
+      <button id="register-login" onclick="redirectToLogin()">Register / Login</button>
+    </div>
+  </header>
+
+  <main>
+  <div class="tejas"> 
+<marquee>
+    <section class="stats">
+      <div class="stat-box">
+        <h3>Farmers</h3>
+        <p id="farmer-count">Loading...</p>
+      </div>
+      <div class="stat-box">
+        <h3>Vendors</h3>
+        <p id="vendor-count">Loading...</p>
+      </div>
+      <div class="stat-box">
+        <h3>Transporters</h3>
+        <p id="transporter-count">Loading...</p>
+      </div>
+    </section>
+  </marquee>
+</div> 
+    <section class="about">
+      <div class="s">
+      <h2>About Fresh Fetch</h2>
+      <p>The Fresh Fetch is a digital platform that connects farmers, vendors, and transport providers. Our goal is to create a seamless, sustainable pathway from farm to market, helping farmers manage produce, vendors access fresh goods, and transport providers ensure efficient deliveries. By simplifying these connections, we’re fostering a transparent and cooperative agricultural community.</p>
+    </div>
+    </section>
+  </main>
+</div>
+  <script>
+  function redirectToLogin() {
+    window.location.href = "index.html"; 
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    background-color: #f44336;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.left-sidebar h2, .right-sidebar h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-form label, .product-form input, .product-form select, .product-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-form input, .product-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-form button:hover {
+    background-color: #45a049;
+}
+
+.transactions-list {
+    list-style-type: none;
+}
+
+.transactions-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.transactions-list li:last-child {
+    border-bottom: none;
+}
