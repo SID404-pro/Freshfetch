@@ -12,8 +12,11 @@
     <div class="h">
       <h1>Welcome to Fresh Fetch</h1>
       <p>Bridging the gap between farmers, vendors, and transporters for a sustainable agricultural ecosystem.</p>
-      <button id="register-login" onclick="redirectToLogin()">Register / Login</button>
+      <button onclick="window.location.href='/redirect-to-index';">Register / Login</button>
+
+    
     </div>
+
   </header>
 
   <main>
@@ -21,16 +24,19 @@
 <marquee>
     <section class="stats">
       <div class="stat-box">
-        <h3>Farmers</h3>
-        <p id="farmer-count">Loading...</p>
+        <!-- <img src="/static/farmar.webp" alt=""> -->
+        <h3>   Farmers  </h3>
+        <p id="farmer-count">50</p>
       </div>
       <div class="stat-box">
-        <h3>Vendors</h3>
-        <p id="vendor-count">Loading...</p>
+        <h3>   Vendors  </h3>
+        <!-- <img src="/static/Vendors1.webp" alt=""> -->
+        <p id="vendor-count">6</p>
       </div>
-      <div class="stat-box">
+      <div  class="stat-box" >
         <h3>Transporters</h3>
-        <p id="transporter-count">Loading...</p>
+        <!-- <img src="/static/transport.jpeg" alt=""> -->
+        <p id="transporter-count">3</p>
       </div>
     </section>
   </marquee>
@@ -43,10 +49,6 @@
     </section>
   </main>
 </div>
-  <script>
-  function redirectToLogin() {
-    window.location.href = "index.html"; 
-  }
-  </script>
+ 
 </body>
 </html>

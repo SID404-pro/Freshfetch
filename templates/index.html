@@ -51,32 +51,6 @@
             </form>
         </div>
     </div>
-
-    <script>
-      document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const email = document.getElementById("loginEmail").value;
-        const password = document.getElementById("loginPassword").value;
-        const role = document.querySelector('select[name="role"]').value;
-
-        fetch("/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: `email=${email}&password=${password}&role=${role}`
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.message === "Login successful") {
-                // Redirect to the respective dashboard based on role
-                window.location.href = `${role}_dashboard.html`;
-            } else {
-                alert(data.message);
-            }
-        })
-        .catch(error => console.error("Error:", error));
-    });
-    </script>
 </body>
 
 </html>

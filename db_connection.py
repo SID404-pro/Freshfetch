@@ -11,7 +11,6 @@ db_config = {
     'database': 'farmer_vendor_transport'
 }
 
-# Function to create and return a database connection
 def get_db_connection():
     try:
         connection = mysql.connector.connect(**db_config)
@@ -22,7 +21,6 @@ def get_db_connection():
         print(f"Error connecting to MySQL: {e}")
         return None
 
-# Optional function to close the database connection
 def close_connection(connection):
     if connection and connection.is_connected():
         connection.close()

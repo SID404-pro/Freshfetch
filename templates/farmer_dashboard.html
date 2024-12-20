@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmer Dashboard</title>
-    <link rel="stylesheet" href="/static/farmer_dashboard.css"> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="/static/farmer_dashboard.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header class="header">
-        <h1>Welcome, {{ user.name }}!</h1>
-        <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+        <h1>Welcome</h1>
+        <a href="/" class="logout">Logout</a>
     </header>
 
     <div class="container">
@@ -18,6 +17,8 @@
         <aside class="left-sidebar">
             <h2>Add Product</h2>
             <form action="/add_product" method="POST" class="product-form">
+                <input type="hidden" name="farmer_id" value="{{ farmer_id }}">
+
                 <label for="category">Category</label>
                 <select name="category" id="category" required>
                     <option value="" disabled selected>Select Category</option>
@@ -25,40 +26,25 @@
                     <option value="fruits">Fruits</option>
                 </select>
 
-                <label for="productName">Product Name</label>
-                <input type="text" id="productName" name="product_name" placeholder="Enter product name" required>
+                <label for="product_name">Product Name</label>
+                <input type="text" name="product_name" placeholder="Enter product name" required>
 
                 <label for="price">Price Per</label>
-                <input type="number" id="price" name="price" placeholder="Price" required>
-                <select name="price_unit" id="priceUnit" required>
+                <input type="number" name="price" placeholder="Price" required>
+                <select name="price_unit" required>
                     <option value="kg">Kg</option>
                     <option value="piece">Piece</option>
                 </select>
 
                 <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" placeholder="Quantity" required>
-                <select name="quantity_unit" id="quantityUnit" required>
+                <input type="number" name="quantity" placeholder="Quantity" required>
+                <select name="quantity_unit" required>
                     <option value="kg">Kg</option>
                     <option value="piece">Piece</option>
                 </select>
 
                 <button type="submit">Add Product</button>
             </form>
-        </aside>
-
-        <!-- Right Sidebar: Recent Transactions -->
-        <aside class="right-sidebar">
-            <h2>Recent Transactions</h2>
-            <ul class="transactions-list">
-                {% for transaction in transactions %}
-                    <li>
-                        <p><strong>Product:</strong> {{ transaction.product_name }}</p>
-                        <p><strong>Price:</strong> {{ transaction.price }} per {{ transaction.price_unit }}</p>
-                        <p><strong>Quantity:</strong> {{ transaction.quantity }} {{ transaction.quantity_unit }}</p>
-                        <p><strong>Date:</strong> {{ transaction.date }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
         </aside>
     </div>
 </body>

@@ -104,14 +104,33 @@ button:hover {
 .stats {
   display: flex;
   animation: marquee 5s linear infinite;
-  /* Create the marquee effect */
+
 }
 
 .stat-box {
-  margin: 0 20px;
+  margin: 0 40px;
   text-align: center;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  color:wheat;
+  font-size: large;
+  /* background-image: url(/static/farmar.webp); */
+  background: rgba(36, 37, 37, 0.5);
   border-radius: 5px;
 }
 
+/* .stat-box2 {
+  margin: 0 40px;
+  text-align: center;
+  padding: 50px;
+  background-image: url(/static/Vendors.jpg);
+  background: rgba(198, 235, 157, 0.8);
+  border-radius: 5px;
+}
+.stat-box3 {
+  margin: 0 40px;
+  text-align: center;
+  padding: 50px;
+  background-image: url(/static/transport.jpeg);
+  background: rgba(198, 235, 157, 0.8);
+  border-radius: 5px;
+} */
